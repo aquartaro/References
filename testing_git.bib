@@ -1,0 +1,174 @@
+% Encoding: UTF-8
+
+@Article{Costa2019,
+  author   = {Costa, Allan and Jenett, Benjamin and Kostitsyna, Irina and Abdel-Rahman, Amira and Gershenfeld, Neil and Cheung, Kenneth},
+  journal  = {2019 IEEE Aerospace Conference},
+  title    = {Algorithmic {Approaches} to {Reconfigurable} {Assembly} {Systems}},
+  year     = {2019},
+  month    = mar,
+  note     = {arXiv: 2008.11925},
+  pages    = {1--8},
+  abstract = {Assembly of large scale structural systems in space is understood as critical to serving applications that cannot be deployed from a single launch. Recent literature proposes the use of discrete modular structures for in-space assembly and relatively small scale robotics that are able to modify and traverse the structure. This paper addresses the algorithmic problems in scaling reconfigurable space structures built through robotic construction, where reconfiguration is defined as the problem of transforming an initial structure into a different goal configuration. We analyze different algorithmic paradigms and present corresponding abstractions and graph formulations, examining specialized algorithms that consider discretized space and time steps. We then discuss fundamental design trades for different computational architectures, such as centralized versus distributed, and present two representative algorithms as concrete examples for comparison. We analyze how those algorithms achieve different objective functions and goals, such as minimization of total distance traveled, maximization of fault-tolerance, or minimization of total time spent in assembly. This is meant to offer an impression of algorithmic constraints on scalability of corresponding structural and robotic design. From this study, a set of recommendations is developed on where and when to use each paradigm, as well as implications for physical robotic and structural system design.},
+  doi      = {10.1109/AERO.2019.8741572},
+  file     = {arXiv Fulltext PDF:https\://arxiv.org/pdf/2008.11925.pdf:application/pdf;arXiv.org Snapshot:http\://arxiv.org/abs/2008.11925:text/html},
+  keywords = {Computer Science - Multiagent Systems, Computer Science - Robotics, J.6},
+  url      = {http://arxiv.org/abs/2008.11925},
+  urldate  = {2020-09-14TZ},
+}
+
+@Article{Gerdes2020,
+  author   = {Gerdes, Levin and Azkarate, Martin and Sánchez-Ibáñez, José Ricardo and Joudrier, Luc and Perez-del-Pulgar, Carlos Jesús},
+  journal  = {Journal of Field Robotics},
+  title    = {Efficient autonomous navigation for planetary rovers with limited resources},
+  year     = {2020},
+  number   = {7},
+  pages    = {1153--1170},
+  volume   = {37},
+  abstract = {Abstract Rovers operating on Mars require more and more autonomous features to fulfill their challenging mission requirements. However, the inherent constraints of space systems render the implementation of complex algorithms an expensive and difficult task. In this paper, we propose an architecture for autonomous navigation. Efficient implementations of autonomous features are built on top of the ExoMars path following navigation approach to enhance the safety and traversing capabilities of the rover. These features allow the rover to detect and avoid hazards and perform significantly longer traverses planned by operators on the ground. The efficient navigation approach has been implemented and tested during field test campaigns on a planetary analogue terrain. The experiments evaluated the proposed architecture by autonomously completing several traverses of variable lengths while avoiding hazards. The approach relies only on the optical Localization Cameras stereo bench, a sensor that is found in all current rovers, and potentially allows for computationally inexpensive long-range autonomous navigation in terrains of medium difficulty.},
+  doi      = {10.1002/rob.21981},
+  eprint   = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/rob.21981},
+  keywords = {autonomy, exploration, perception, planetary robotics, planning},
+  url      = {https://onlinelibrary.wiley.com/doi/abs/10.1002/rob.21981},
+}
+
+@InProceedings{Doggett2018,
+  author     = {Doggett, William R. and Dorsey, John and Teter, John and Paddock, David and Jones, Thomas and Komendera, Erik E. and Bowman, Lynn and Taylor, Chuck and Mikulas, Martin},
+  booktitle  = {2018 {AIAA} {SPACE} and {Astronautics} {Forum} and {Exposition}},
+  title      = {Persistent {Assets} in {Zero}-{G} and on {Planetary} {Surfaces}: {Enabled} by {Modular} {Technology} and {Robotic} {Operations}},
+  year       = {2018},
+  address    = {Orlando, FL},
+  month      = sep,
+  publisher  = {American Institute of Aeronautics and Astronautics},
+  doi        = {10.2514/6.2018-5305},
+  file       = {Doggett et al. - 2018 - Persistent Assets in Zero-G and on Planetary Surfa.pdf:C\:\\Users\\Amy\\Zotero\\storage\\G538ZI3D\\Doggett et al. - 2018 - Persistent Assets in Zero-G and on Planetary Surfa.pdf:application/pdf},
+  isbn       = {978-1-62410-575-3},
+  language   = {en},
+  shorttitle = {Persistent {Assets} in {Zero}-{G} and on {Planetary} {Surfaces}},
+  url        = {https://arc.aiaa.org/doi/10.2514/6.2018-5305},
+  urldate    = {2020-08-28},
+}
+
+@Article{Komendera,
+  author   = {Komendera, Erik},
+  title    = {Precise {Assembly} of {Truss} {Structures} by {Distributed} {Robots}},
+  pages    = {164},
+  file     = {Komendera - Precise Assembly of Truss Structures by Distribute.pdf:C\:\\Users\\Amy\\Zotero\\storage\\QT8MWZPK\\Komendera - Precise Assembly of Truss Structures by Distribute.pdf:application/pdf},
+  language = {en},
+}
+
+@Article{Komendera2015,
+  author   = {Komendera, Erik and Correll, Nikolaus},
+  journal  = {The International Journal of Robotics Research},
+  title    = {Precise assembly of {3D} truss structures using {MLE}-based error prediction and correction},
+  year     = {2015},
+  issn     = {0278-3649, 1741-3176},
+  month    = nov,
+  number   = {13},
+  pages    = {1622--1644},
+  volume   = {34},
+  abstract = {We describe a method to construct precise truss structures from non-precise commodity parts. Trusses with precision in the order of micrometers, such as the truss of a space telescope, have previously been built using precisely machined truss connection systems. This approach is expensive, heavy, and prone to failure, e.g. when a single element is lost. In the past, we have proposed a novel concept in which non-precise commodity parts can be aligned using intelligent precision jigging robots and then welded in place. Even when using highly precise sensors and actuators, this approach can still lead to errors due to thermal expansion and structural deformation. In this paper, we describe and evaluate algorithms for generating truss assembly sequences that reduce the expected error by (1) using a heuristic to generate build sequences that reduce the expected variance, and (2) during assembly, estimating the structure’s pose using maximum likelihood estimation that combines local measurements by different intelligent precision jigging robots, improves this estimate during loop closures in the construction process, and uses this estimate to correct for errors during construction. We show through simulation and physical experiment that this combined approach reduces assembly error, enabling precision construction with commodity materials. While the model herein is based on truss structures, the proposed methods generalize to a larger class of incremental assembly problems, which exhibit continuous rather than discrete errors.},
+  doi      = {10.1177/0278364915596588},
+  file     = {Komendera and Correll - 2015 - Precise assembly of 3D truss structures using MLE-.pdf:C\:\\Users\\Amy\\Zotero\\storage\\8WTAQ66N\\Komendera and Correll - 2015 - Precise assembly of 3D truss structures using MLE-.pdf:application/pdf},
+  language = {en},
+  url      = {http://journals.sagepub.com/doi/10.1177/0278364915596588},
+  urldate  = {2020-04-30},
+}
+
+@InProceedings{Komendera2013,
+  author    = {Komendera, Erik and Reishus, Dustin and Correll, Nikolaus},
+  booktitle = {2013 {IEEE} {Conference} on {Technologies} for {Practical} {Robot} {Applications} ({TePRA})},
+  title     = {Precise truss assembly using commodity parts and low precision welding},
+  year      = {2013},
+  month     = apr,
+  note      = {ISSN: 2325-0534},
+  pages     = {1--6},
+  abstract  = {We describe an Intelligent Precision Jigging Robot (IPJR), which allows high precision assembly of commodity parts with low-precision bonding. We present preliminary experiments in 2D that are motivated by the problem of assembling a space telescope optical bench on orbit using inexpensive, stock hardware and low-precision welding. An IPJR is a robot that acts as the precise "jigging", holding parts of a local assembly site in place while an external low precision assembly agent cuts and welds members. The prototype presented in this paper allows an assembly agent (in this case, a human using only low precision tools), to assemble a 2D truss made of wooden dowels to a precision on the order of millimeters over a span on the order of meters. We report the challenges of designing the IPJR hardware and software, analyze the error in assembly, document the test results over several experiments including a large-scale ring structure, and describe future work to implement the IPJR in 3D and with micron precision.},
+  annote    = {Skimmed: Early IPJR implementation and error accumulation},
+  doi       = {10.1109/TePRA.2013.6556345},
+  file      = {IEEE Xplore Abstract Record:C\:\\Users\\Amy\\Zotero\\storage\\ZFVFJ7EC\\6556345.html:text/html;IEEE Xplore Full Text PDF:C\:\\Users\\Amy\\Zotero\\storage\\2L9NGTK3\\Komendera et al. - 2013 - Precise truss assembly using commodity parts and l.pdf:application/pdf},
+  keywords  = {robotic assembly, robotic welding, Robots, supports, Welding, 2D truss, assembly agent, bonding processes, commodity parts, intelligent precision jigging robot, intelligent robots, IPJR, large-scale ring structure, local assembly site, low precision welding, micron precision, precise truss assembly, space telescope optical bench, wooden dowels},
+}
+
+@InProceedings{Belvin2016,
+  author     = {Belvin, Wendel K. and Doggett, William R. and Watson, Judith J. and Dorsey, John T. and Warren, Jay E. and Jones, Thomas C. and Komendera, Erik E. and Mann, Troy and Bowman, Lynn M.},
+  booktitle  = {3rd {AIAA} {Spacecraft} {Structures} {Conference}},
+  title      = {In-{Space} {Structural} {Assembly}: {Applications} and {Technology}},
+  year       = {2016},
+  address    = {San Diego, California, USA},
+  month      = jan,
+  publisher  = {American Institute of Aeronautics and Astronautics},
+  doi        = {10.2514/6.2016-2163},
+  file       = {Belvin et al. - 2016 - In-Space Structural Assembly Applications and Tec.pdf:C\:\\Users\\Amy\\Zotero\\storage\\C85MA3MI\\Belvin et al. - 2016 - In-Space Structural Assembly Applications and Tec.pdf:application/pdf},
+  isbn       = {978-1-62410-394-0},
+  language   = {en},
+  shorttitle = {In-{Space} {Structural} {Assembly}},
+  url        = {http://arc.aiaa.org/doi/10.2514/6.2016-2163},
+  urldate    = {2020-04-30},
+}
+
+@InCollection{Komenderaa,
+  author    = {Komendera, Erik E. and Doggett, William R. and Dorsey, John},
+  booktitle = {{AIAA} {SPACE} 2015 {Conference} and {Exposition}},
+  publisher = {American Institute of Aeronautics and Astronautics},
+  title     = {Control {System} {Design} {Implementation} and {Preliminary} {Demonstration} for a {Tendon} {Actuated} {Lightweight} {In}-{Space} {MANipulator} ({TALISMAN})},
+  note      = {\_eprint: https://arc.aiaa.org/doi/pdf/10.2514/6.2015-4628},
+  annote    = {READ. Controls scheme and simulation results for active-passive tendons.},
+  doi       = {10.2514/6.2015-4628},
+  file      = {Submitted Version:C\:\\Users\\Amy\\Zotero\\storage\\NQJDYEXZ\\Komendera et al. - Control System Design Implementation and Prelimina.pdf:application/pdf;AIAA Snapshot:C\:\\Users\\Amy\\Zotero\\storage\\NGI8HFLV\\6.html:text/html},
+  url       = {https://arc.aiaa.org/doi/abs/10.2514/6.2015-4628},
+  urldate   = {2020-04-30},
+}
+
+@InCollection{Komendera2016,
+  author    = {Komendera, Erik and Correll, Nikolaus},
+  booktitle = {Experimental {Robotics}},
+  publisher = {Springer International Publishing},
+  title     = {Precise {Assembly} of {3D} {Truss} {Structures} {Using} {EKF}-{Based} {Error} {Prediction} and {Correction}},
+  year      = {2016},
+  address   = {Cham},
+  editor    = {Hsieh, M. Ani and Khatib, Oussama and Kumar, Vijay},
+  isbn      = {978-3-319-23777-0 978-3-319-23778-7},
+  note      = {Series Title: Springer Tracts in Advanced Robotics},
+  pages     = {507--521},
+  volume    = {109},
+  abstract  = {We describe a method to construct precise truss structures from non-precise commodity parts. Trusses with precision in the order of micrometers, such as the truss of a space telescope, can be accomplished with precisely machined truss connection systems. This approach is expensive, heavy, and prone to failure, e.g., when a single element is lost. In the past, we have proposed a novel concept in which non-precise commodity parts can be aligned using precise jigging robots and then welded in place. Even when using highly precise sensors and actuators, this approach can still lead to errors due to thermal expansion and structural deformation. In this paper, we describe and experimentally evaluate an EKF-based SLAM approach that allows a team of intelligent precision jigging robots (IPJR) to maintain a common estimate of the structure’s pose, improve this estimate during loop closures in the construction process, and uses this estimate to correct for errors during construction. We also show that attaching a new node to the assembly site with the lowest uncertainty significantly increases accuracy.},
+  doi       = {10.1007/978-3-319-23778-7_33},
+  file      = {Komendera and Correll - 2016 - Precise Assembly of 3D Truss Structures Using EKF-.pdf:C\:\\Users\\Amy\\Zotero\\storage\\ET9FTT9R\\Komendera and Correll - 2016 - Precise Assembly of 3D Truss Structures Using EKF-.pdf:application/pdf},
+  language  = {en},
+  url       = {http://link.springer.com/10.1007/978-3-319-23778-7_33},
+  urldate   = {2020-04-30},
+}
+
+@InProceedings{Dorsey2012,
+  author    = {Dorsey, John and Doggett, William and Hafley, Robert and Komendera, Erik and Correll, Nikolaus and King, Bruce},
+  booktitle = {{AIAA} {SPACE} 2012 {Conference} \& {Exposition}},
+  title     = {An {Efficient} and {Versatile} {Means} for {Assembling} and {Manufacturing} {Systems} in {Space}},
+  year      = {2012},
+  address   = {Pasadena, California},
+  month     = sep,
+  publisher = {American Institute of Aeronautics and Astronautics},
+  doi       = {10.2514/6.2012-5115},
+  file      = {Dorsey et al. - 2012 - An Efficient and Versatile Means for Assembling an.pdf:C\:/Users/Amy/Zotero/storage/YN5WAIF7/Dorsey et al. - 2012 - An Efficient and Versatile Means for Assembling an.pdf:application/pdf;:C\:/Users/Amy/Zotero/storage/YN5WAIF7/Dorsey et al. - 2012 - An Efficient and Versatile Means for Assembling an.pdf:PDF},
+  isbn      = {978-1-60086-940-2},
+  language  = {en},
+  url       = {http://arc.aiaa.org/doi/10.2514/6.2012-5115},
+  urldate   = {2020-04-30},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
+
+@Comment{jabref-meta: fileDirectory:D:\\UserFiles\\Amy\\Documents\\References\\JabrefTest;}
+
+@Comment{jabref-meta: grouping:
+0 AllEntriesGroup:;
+1 KeywordGroup:testGroup\;0\;author\;Komendera\;0\;0\;1\;0xff00ffff\;\;Komendera\;;
+}
+
+@Comment{jabref-meta: protectedFlag:true;}
+
+@Comment{jabref-meta: saveActions:enabled;
+all-text-fields[remove_unicode_ligatures]
+date[normalize_date]
+month[normalize_month]
+pages[normalize_page_numbers]
+;}
